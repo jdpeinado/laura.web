@@ -73,6 +73,29 @@ header {
     margin-bottom: 10px;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px 0;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+input, select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #00a79d;
+}
+
 .cta-button {
     display: block;
     width: 100%;
@@ -84,11 +107,18 @@ header {
     margin-top: 20px;
     margin-bottom: 20px;
     text-align: center;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+    opacity: 0.5;
+    cursor: not-allowed;
 }
 
 .cta-button:hover {
     background: #008c82;
+}
+
+.cta-button.active {
+    opacity: 1;
+    cursor: pointer;
 }
 
 .info-sections {

@@ -32,7 +32,28 @@
             </ul>
         </div>
 
-        <a href="https://wa.me/529812283004" class="cta-button" target="_blank">Agendar una Consulta por WhatsApp</a>
+        <form id="consultaForm">
+            <input type="text" id="nombre" placeholder="Nombre y Apellidos" required>
+            <input type="number" id="edad" placeholder="Edad" required>
+            <select id="motivoConsulta" required>
+                <option value="">Seleccione el motivo de consulta</option>
+                <option value="Educación en diabetes">Educación en diabetes</option>
+                <option value="Ajuste de tratamiento en diabetes">Ajuste de tratamiento en diabetes</option>
+                <option value="Problemas de crecimiento">Problemas de crecimiento</option>
+                <option value="Pubertad">Pubertad</option>
+                <option value="Enfermedades de la tiroides">Enfermedades de la tiroides</option>
+            </select>
+            <select id="tipoConsulta" required>
+                <option value="">Seleccione el tipo de consulta</option>
+                <option value="En línea">En línea</option>
+                <option value="Presencial">Presencial</option>
+            </select>
+            <input type="email" id="email" placeholder="Correo electrónico" required>
+            <input type="text" id="ciudad" placeholder="Ciudad" required>
+            <input type="text" id="pais" placeholder="País" required>
+        </form>
+
+        <a href="#" id="ctaButton" class="cta-button" target="_blank">Agendar una Consulta por WhatsApp</a>
 
         <div class="info-sections">
             <div class="info-section">
@@ -51,5 +72,7 @@
             </div>
         </div>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
