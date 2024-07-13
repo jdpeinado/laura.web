@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333333;
+    background-color: #f0f0f0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+}
+
+header {
+    background: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: #00a79d 3px solid;
+}
+
+.logo {
+    width: 100%;
+    height: auto;
+    max-height: 150px;
+    object-fit: contain;
+}
+
+.doctor-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.doctor-image {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 50%;
+    border: 5px solid #00a79d;
+    margin-bottom: 20px;
+}
+
+.doctor-text {
+    text-align: center;
+}
+
+.services {
+    background: #ffffff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.services h3 {
+    color: #00a79d;
+}
+
+.services ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.services li {
+    margin-bottom: 10px;
+}
+
+.cta-button {
+    display: block;
+    width: 100%;
+    background: #00a79d;
+    color: #ffffff;
+    padding: 15px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background: #008c82;
+}
+
+.info-sections {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.info-section {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.info-section h3 {
+    color: #00a79d;
+    margin-bottom: 10px;
+}
+
+.info-section p {
+    font-size: 0.9em;
+    line-height: 1.6;
+}
+
+@media (min-width: 768px) {
+    .container {
+        padding: 40px;
+    }
+
+    .logo {
+        max-height: 200px;
+    }
+
+    .doctor-info {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .doctor-image {
+        width: 40%;
+        margin-bottom: 0;
+    }
+
+    .doctor-text {
+        width: 55%;
+        text-align: left;
+    }
+
+    .cta-button {
+        width: auto;
+        display: inline-block;
+    }
+
+    .info-sections {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .info-section {
+        flex-basis: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .logo {
+        max-height: 250px;
+    }
+}
